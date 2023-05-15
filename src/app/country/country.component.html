@@ -1,0 +1,8 @@
+<div class="card" [ngClass]="{'lowPopulation': population < 100000 , 'HighPopulation': population >= 100000}">
+  <img class="card-img-top" style="height:200px;"   [src]="flagurl" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{name | pluralize}}</h5>
+    <p class="card-text">{{description}}</p>
+    <a href="#" class="btn btn-primary" (click)="showPopulation()">{{population | number}}</a>
+  </div>
+</div>

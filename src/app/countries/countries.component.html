@@ -1,0 +1,10 @@
+<div class="row">
+  <div class="col-2" *ngFor="let c of Countries" style='margin:5px' (click)="handleCountrySelection(c)">
+      <country
+          [name]="c.name"
+          [flagurl]="c.imgsrc"
+          [population]="c.population"
+          >
+        </country>
+  </div>
+</div>
